@@ -7,10 +7,10 @@
 #define NUM_CHEFS (NUM_GUESTS * CHEFS_PER_GUEST)
 
 #define MODE 1 // 1:宴会模式; 2:限时任务
-#define TARGET_SCORE_APPROXIMATE 2360000
+#define TARGET_SCORE_APPROXIMATE 1800000
 // 这里输分数线，达标之后将停止搜索
 
-#define ITER_CHEF 5000   // 选择厨师时的迭代次数
+#define ITER_CHEF 6000   // 选择厨师时的迭代次数
 #define ITER_RECIPE 1000 // 对于每一组厨师，选择菜谱时的迭代次数
 
 #define AVOID_CHEF_1 true
