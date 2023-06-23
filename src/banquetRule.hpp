@@ -4,9 +4,9 @@
 #include "functions.hpp"
 
 // 风云宴 玉贵人2
-int banquetRule9(BanquetStrictRule **, BanquetLenientRule **, States &, int);
+int banquetRule11(BanquetStrictRule **, BanquetLenientRule **, States &, int);
 // 风云宴 胡喜媚2
-int banquetRule10(BanquetStrictRule **, BanquetLenientRule **, States &, int);
+int banquetRule12(BanquetStrictRule **, BanquetLenientRule **, States &, int);
 
 /**
  * @brief
@@ -25,13 +25,13 @@ void banquetRule(BanquetRule *const &rule, States &s, int *bestfull) {
         strictRule[i] = &rule[i].strictRule;
         lenientRule[i] = &rule[i].lenientRule;
     }
-    bestfull[0] = banquetRule9(strictRule, lenientRule, s, 0);
-    bestfull[1] = banquetRule10(strictRule, lenientRule, s, 1);
+    bestfull[0] = banquetRule11(strictRule, lenientRule, s, 0);
+    bestfull[1] = banquetRule12(strictRule, lenientRule, s, 1);
     return;
 }
 
 // 风云宴 玉贵人2
-int banquetRule9(BanquetStrictRule **strictRule,
+int banquetRule11(BanquetStrictRule **strictRule,
                  BanquetLenientRule **lenientRule, States &s, int rank) {
     int d = rank * DISH_PER_CHEF * CHEFS_PER_GUEST;
     // 第1轮
@@ -134,7 +134,7 @@ int banquetRule9(BanquetStrictRule **strictRule,
 }
 
 // 风云宴 胡喜媚2
-int banquetRule10(BanquetStrictRule **strictRule,
+int banquetRule12(BanquetStrictRule **strictRule,
                   BanquetLenientRule **lenientRule, States &s, int rank) {
     int d = rank * DISH_PER_CHEF * CHEFS_PER_GUEST;
     // 第1轮
