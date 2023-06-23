@@ -97,7 +97,7 @@ int banquetRule9(BanquetStrictRule **strictRule,
     // 条件：4火：下道料理意图生效次数加一
     for (int i = d + 3; i < d + 5; i++) {
         if (s.recipe[i]->rarity == 4) {
-            lenientRule[i + 1]->onemore();
+            lenientRule[i + 1]->oneMore();
             break;
         }
     }
