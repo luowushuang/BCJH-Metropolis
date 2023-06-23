@@ -41,7 +41,6 @@ void toolEquipped(Chef *chef) {
         chef->NoTool();                // 不允许装备其他厨具
     }
     
-    return; // 以下为示例代码，可自行修改。完成后注释此行。
-    
+    return; // 以下为示例代码，可自行修改。完成后注释此行。    
 }
 #endif
