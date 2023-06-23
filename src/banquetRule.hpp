@@ -3,9 +3,9 @@
 #include "Calculator.hpp"
 #include "functions.hpp"
 
-// 风云宴 韩湘子2
+// 风云宴 玉贵人2
 int banquetRule9(BanquetStrictRule **, BanquetLenientRule **, States &, int);
-// 风云宴 蓝采和2
+// 风云宴 胡喜媚2
 int banquetRule10(BanquetStrictRule **, BanquetLenientRule **, States &, int);
 
 /**
@@ -30,7 +30,7 @@ void banquetRule(BanquetRule *const &rule, States &s, int *bestfull) {
     return;
 }
 
-// 风云宴 韩湘子2
+// 风云宴 玉贵人2
 int banquetRule9(BanquetStrictRule **strictRule,
                  BanquetLenientRule **lenientRule, States &s, int rank) {
     int d = rank * DISH_PER_CHEF * CHEFS_PER_GUEST;
@@ -133,7 +133,7 @@ int banquetRule9(BanquetStrictRule **strictRule,
     return 19;
 }
 
-// 风云宴 蓝采和2
+// 风云宴 胡喜媚2
 int banquetRule10(BanquetStrictRule **strictRule,
                   BanquetLenientRule **lenientRule, States &s, int rank) {
     int d = rank * DISH_PER_CHEF * CHEFS_PER_GUEST;
