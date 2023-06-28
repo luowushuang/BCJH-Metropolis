@@ -179,7 +179,7 @@ int banquetRule10(BanquetStrictRule **strictRule,
     // 第2道菜意图生效次数+1
     lenientRule[d + 4]->oneMore();
     // 条件：1火：本道料理饱腹感+5
-    for (int i = d + 3; i < d + 5; i++) {
+    for (int i = d + 3; i < d + 6; i++) {
         if (s.recipe[i]->rarity == 1) {
             lenientRule[i]->addRule.full += 5;
             break;
@@ -217,7 +217,7 @@ int banquetRule10(BanquetStrictRule **strictRule,
     // 条件：辣：本道料理基础售价+50%
     for (int i = d + 6; i < d + 9; i++) {
         if (s.recipe[i]->flavor.spicy) {
-            lenientRule[i]->addRule.buff += 50;
+            lenientRule[i]->baseRule.buff += 50;
             break;
         }
     }
