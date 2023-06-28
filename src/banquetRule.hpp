@@ -87,10 +87,10 @@ int banquetRule9(BanquetStrictRule **strictRule,
             break;
         }
     }
-    // 条件：5火：本道料理基础售价+50%
+    // 条件：5火：本道料理售价+50%
     for (int i = d + 3; i < d + 6; i++) {
         if (s.recipe[i]->rarity == 5) {
-            lenientRule[i]->baseRule.buff += 50;
+            lenientRule[i]->addRule.buff += 50;
             break;
         }
     }
