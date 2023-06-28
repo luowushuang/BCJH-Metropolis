@@ -51,7 +51,7 @@ int banquetRule9(BanquetStrictRule **strictRule,
         s.recipe[d + 2]->cookAbility.bake > 0) {
         for (int i = d + 3; i < d + 6; i++) {
             if (s.recipe[i]->cookAbility.boil > 0) {
-                strictRule[i]->addRule.buff += 1;
+                strictRule[i]->addRule.buff += 100;
             }
         }
     }
