@@ -48,5 +48,6 @@ void toolEquipped(Chef *chef) {
         skill->abilityBuff.boil += 30; // 煮售价+30%
         chef->NoTool();                // 不允许装备其他厨具
     }
+    
 }
 #endif
