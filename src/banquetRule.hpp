@@ -96,8 +96,8 @@ int banquetRule9(BanquetStrictRule **strictRule,
     }
     // 第3轮
     // 条件：第一道菜：第一道菜饱腹感为2
-    lenientRule[d + 6]->addRule.fullAdd == false;
-    strictRule[d + 6]->addRule.full == 2;
+    lenientRule[d + 6]->addRule.fullAdd = false;
+    strictRule[d + 6]->addRule.full = 2;
     // 条件：5火：本道料理售价+100%
     for (int i = d + 6; i < d + 9; i++) {
         if (s.recipe[i]->rarity == 5) {
