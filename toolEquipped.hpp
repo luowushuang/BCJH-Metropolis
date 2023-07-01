@@ -19,6 +19,10 @@
 // 例：skill->materialBuff.vegetable += 15; // 蔬菜售价+15%
 //   vegetable 菜类；meat 肉类；fish 鱼类；creation 面类
 
+// 关于火数售价：
+// 例：skill->rarityBuff.one += 30; // 一火售价+30%
+//   one 一火； two 二火； three 三火； four 四火； five 五火
+
 // 关于金币获得：
 // 例：skill->coinBuff += 30; // 金币获得+30%
 
