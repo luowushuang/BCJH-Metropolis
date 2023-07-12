@@ -23,13 +23,7 @@
 // 例：skill->coinBuff += 30; // 金币获得+30%
 
 void toolEquipped(Chef *chef) {
-    return; // 以下为示例代码，可自行修改。完成后注释此行。
 
-    /////////// 不希望任何厨师装备厨具：
-
-    chef->NoTool();
-
-    /////////// 自定义厨师装备的厨具：
     auto skill = &chef->skill; // 这句不用管，放着就好。
 
     if (chef->name == "达浪") {              // 智能小鱼板
@@ -46,6 +40,6 @@ void toolEquipped(Chef *chef) {
         skill->abilityBuff.boil += 30; // 煮售价+30%
         chef->NoTool();                // 不允许装备其他厨具
     }
-    
+    return; // 以下为示例代码，可自行修改。完成后注释此行。
 }
 #endif
